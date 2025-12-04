@@ -1,0 +1,25 @@
+{
+  "name": "HIS Ethiopia CoP Theme",
+  "about_url": "https://github.com/AschX-Dev/cop-theme",
+  "license_url": null,
+  "authors": "AschX-Dev",
+  "theme_version": "1.0",
+  "minimum_discourse_version": null,
+  "maximum_discourse_version": null,
+  "assets": {},
+  "color_schemes": {
+    "HIS Ethiopia": {
+      "primary": "1E3A8A",
+      "secondary": "FBBF24",
+      "tertiary": "10B981",
+      "quaternary": "1E3A8A",
+      "header_background": "1E3A8A",
+      "header_primary": "FFFFFF",
+      "highlight": "FBBF24",
+      "danger": "EF4444",
+      "success": "10B981",
+      "love": "F43F5E"
+    }
+  },
+  "learn_more": "https://meta.discourse.org/t/beginners-guide-to-using-discourse-themes/91966"
+}
