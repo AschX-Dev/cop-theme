@@ -1,0 +1,33 @@
+// HIS Ethiopia CoP Theme - Mobile Styles
+
+// -----------------------------------------------------------------------------
+// Mobile Layout Overrides
+// -----------------------------------------------------------------------------
+
+// Adjust font sizes for mobile readability
+html {
+    font-size: 14px; // Slightly smaller base font for mobile
+}
+
+.d-header {
+    height: 60px; // Slightly smaller header on mobile
+
+    .title {
+        font-size: 1.2em;
+    }
+
+    .header-subtitle {
+        display: none; // Hide subtitle on very small screens to save space
+    }
+}
+
+// Ensure buttons are touch-friendly
+.btn {
+    padding: 8px 12px;
+}
+
+// Adjust padding for content
+.topic-list,
+.category-list {
+    padding: 5px; // Less padding on mobile
+}

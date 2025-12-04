@@ -1,0 +1,192 @@
+// HIS Ethiopia CoP Theme - Common Styles
+
+// -----------------------------------------------------------------------------
+// 1. Variables & Colors
+// -----------------------------------------------------------------------------
+
+$primary-blue: #1E3A8A; // Ethiopian dark blue
+$accent-gold: #FBBF24;  // Ethiopian gold/yellow
+$success-green: #10B981;
+$bg-color: #F9FAFB;
+$text-color: #1F2937;
+$border-color: #E5E7EB;
+
+$font-heading: 'Roboto', sans-serif;
+$font-body: 'Open Sans', sans-serif;
+
+// -----------------------------------------------------------------------------
+// 2. Global Typography & Layout
+// -----------------------------------------------------------------------------
+
+body {
+  font-family: $font-body;
+  background-color: $bg-color;
+  color: $text-color;
+  line-height: 1.6; // Increased line-height for readability
+  font-size: 16px;  // Increased base font size
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-heading;
+  font-weight: 700;
+  color: $primary-blue;
+}
+
+// -----------------------------------------------------------------------------
+// 3. Buttons
+// -----------------------------------------------------------------------------
+
+.btn {
+  border-radius: 8px; // Rounded corners
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+
+// Primary Buttons
+.btn-primary {
+  background-color: $primary-blue;
+  color: #ffffff;
+  border: none;
+
+  &:hover {
+    background-color: $accent-gold;
+    color: $primary-blue;
+  }
+}
+
+// Secondary Buttons (often .btn-default or .btn-icon-text)
+.btn-default, .btn-icon-text {
+  background-color: #ffffff;
+  color: $primary-blue;
+  border: 1px solid $primary-blue;
+
+  &:hover {
+    background-color: $primary-blue;
+    color: #ffffff;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// 4. Header & Navigation
+// -----------------------------------------------------------------------------
+
+.d-header {
+  background-color: $primary-blue;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  height: 70px; // Slightly taller header
+
+  .title {
+    color: #ffffff;
+    
+    a {
+      color: #ffffff;
+    }
+  }
+
+  .icons {
+    .icon {
+      color: #ffffff;
+      
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+    }
+  }
+  
+  // Custom subtitle styling
+  .header-subtitle {
+    color: $accent-gold;
+    font-size: 0.9em;
+    margin-left: 10px;
+    font-family: $font-heading;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+// Sticky Header is default in Discourse, but ensuring z-index and position
+.d-header-wrap {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+// -----------------------------------------------------------------------------
+// 5. Links
+// -----------------------------------------------------------------------------
+
+a {
+  color: $primary-blue;
+  text-decoration: none;
+
+  &:hover {
+    color: darken($accent-gold, 10%);
+    text-decoration: underline;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// 6. Category Strips & Badges
+// -----------------------------------------------------------------------------
+
+.badge-wrapper.box {
+  border-radius: 4px;
+}
+
+// Example: Customizing specific categories if needed by ID or slug
+// This is a general approach for category badges
+.badge-category-bg {
+  border-radius: 4px;
+}
+
+.badge-category-parent-bg {
+  border-radius: 4px;
+}
+
+// -----------------------------------------------------------------------------
+// 7. Topic List & Cards
+// -----------------------------------------------------------------------------
+
+.topic-list-item {
+  background-color: #ffffff;
+  border-bottom: 1px solid $border-color;
+  
+  &:hover {
+    background-color: lighten($bg-color, 2%);
+  }
+}
+
+// Subtle box shadows for containers
+.category-list, .topic-list, .post-stream .topic-post {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 10px; // Add some padding inside the container
+  margin-bottom: 20px;
+}
+
+// -----------------------------------------------------------------------------
+// 8. Sidebar / Navigation
+// -----------------------------------------------------------------------------
+
+.sidebar-section-link-wrapper {
+  .sidebar-section-link {
+    &.active {
+      background-color: lighten($primary-blue, 55%);
+      color: $primary-blue;
+      font-weight: bold;
+    }
+    
+    &:hover {
+      background-color: lighten($primary-blue, 60%);
+    }
+  }
+}
+
+// Custom Icon for Guidelines (replacing FAQ icon visually if needed via CSS, though JS is better for text)
+// Assuming we target the specific link if it has a class or attribute, but JS will handle the text/icon swap mostly.
+
+// -----------------------------------------------------------------------------
+// 9. Footer (Optional)
+// -----------------------------------------------------------------------------
+// If a footer is added, style it here.

@@ -1,0 +1,25 @@
+// HIS Ethiopia CoP Theme - Desktop Styles
+
+// -----------------------------------------------------------------------------
+// Desktop Layout Overrides
+// -----------------------------------------------------------------------------
+
+// Max container width as requested
+.wrap {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+// Ensure header content aligns with the max-width
+.d-header {
+    .wrap {
+        max-width: 1280px;
+    }
+}
+
+// Adjustments for larger screens
+@media screen and (min-width: 1280px) {
+    .topic-body {
+        width: 100%; // Ensure full width usage within the container
+    }
+}

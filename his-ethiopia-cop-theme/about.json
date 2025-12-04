@@ -1,0 +1,23 @@
+{
+  "name": "HIS Ethiopia Community of Practice",
+  "about_url": "https://github.com/hisp-ethiopia/his-ethiopia-cop-theme",
+  "license_url": "https://github.com/hisp-ethiopia/his-ethiopia-cop-theme/blob/main/LICENSE",
+  "component": false,
+  "assets": {
+  },
+  "color_schemes": {
+    "HIS Ethiopia Palette": {
+      "primary": "1F2937",
+      "secondary": "F9FAFB",
+      "tertiary": "1E3A8A",
+      "quaternary": "FBBF24",
+      "header_background": "1E3A8A",
+      "header_primary": "FFFFFF",
+      "highlight": "FBBF24",
+      "danger": "E45735",
+      "success": "10B981",
+      "love": "FA8484"
+    }
+  },
+  "learn_more": "https://github.com/hisp-ethiopia/his-ethiopia-cop-theme"
+}
